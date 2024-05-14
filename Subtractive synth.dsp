@@ -1,3 +1,4 @@
+// Subtractive synthesizer for Android. Accelerometer mapping and x/y multi interface are available 
 import ("stdfaust.lib");
 
 wavegenerator = hgroup("[0]Wave Generator", no.noise, os.triangle(freq), os.sawtooth(freq), os.square(freq) : ba.selectn(4, wave))
